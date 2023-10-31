@@ -123,14 +123,14 @@
     width: 200px;
     padding: 10px;
     border-radius: 0 0 20px 20px;
-    z-index: 1; /* Adjust the z-index to be under the menu container */
+    z-index: 1;
 }
 .container .box .menu.active {
     display: flex;
 }
 
 
-/* Your existing CSS up to tablet media query */
+
 
 /* Media query for tablet screens */
 @media (max-width: 1024px) {
