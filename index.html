@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE TEMPLET</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+		function toggleMenu() {
+			var menu = document.getElementById("menu");
+			if(menu.style.display === "block"){
+                menu.style.display= "none";
+            }else{
+                menu.style.display="block";
+            }
+		}
+		</script>
+	</head>
+<body>
+    <div class="container">
+    <div class="menu-container">
+        <a href="#" class="logo">Schneider</a>
+		<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+        <div class="box">
+            <nav>
+                <ul id="menu" class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contains">
+                    <div class="section-1">
+                    <h3>UI/UX Designer & Developer </h3>
+                    <h3> I'm Joanna Schneider </h3>           
+					<br><br>
+                    <a class="btn" href="">MORE ABOUT ME</a>
+                </div>
+
+                <div class="section-2">
+                    <img src="p.png" alt="">
+				</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
