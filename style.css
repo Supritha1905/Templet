@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.container .box nav{
+    height: 8%;
+    width: 95%;
+    position: absolute;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+}
+.container .box nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    list-style: none;
+}
+.container .box nav ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #242329;
+    transition: 0.3s
+}
+.container .box nav ul li a:hover{
+    color: #7c8bd1;
+}
+.container .box nav .logo{
+    font-size: 35px;
+    color: #242329;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+.container .box .contains{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+.contains .section-1{
+    position: relative;
+    width: 40%;
+}
+.contains .section-1 h3{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #24232908;
+}
+.contains .section-1 h3{
+    color:#505052;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.contains .section-1 p{
+    font-size: 18px;
+    color: #505052;
+    margin-bottom: 50px;
+}
+.contains .section-1 .btn{
+    padding: 15px 20px;
+    background-color:#505052 ;
+    
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.contains .section-1 .btn:hover{
+    color: #6f34fe;
+    transition: 0.3s;
+    background-color: #cdddf3;
+    border: 1px solid ;
+}
+.contains .section-2{
+    width: 40%;
+    margin-right: 50px;
+}
+.contains .section-2 img{
+    width: 100%;
+    height: 80%;
+}
+.container .menu-container .logo {
+    font-size: 35px;
+    font-weight: bold;
+}
+.container .box .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    width: 200px;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    z-index: 1; /* Adjust the z-index to be under the menu container */
+}
+.container .box .menu.active {
+    display: flex;
+}
+
+
+/* Your existing CSS up to tablet media query */
+
+/* Media query for tablet screens */
+@media (max-width: 1024px) {
+    .contains {
+        flex-direction: column-reverse;
+    }
+
+    .contains .section-1 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contains .section-2 {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+#menu{
+    display:none;
+
+}
+
+.container .menu-container .logo{
+    font-size: 35px;
+    font-weight: bold;
+}
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .container .box nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        padding: 10px;
+        border-radius: 0 0 20px 20px;
+    }
+    .container .box nav ul.active {
+        display: flex;
+    }
+
+    .container .box nav ul li {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container .box nav .menu-toggle {
+        font-size: 24px;
+        cursor: pointer;
+        display: block;
+        position:absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+    .container .box nav a.logo{
+        display: block;
+        position: relative;
+        top: 20px;
+        left:20;
+        z-index: 3;
+    
+    }
+    .container .menu-container .menu-toggle{
+        right:20px;
+    }
+}
